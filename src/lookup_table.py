@@ -1,3 +1,15 @@
+"""
+Lookup table for Leibniz cipher
+
+This document contains a lookup table for the Leibniz
+cipher, within a Python dictionary. This is designed to
+be imported as a global variable.
+
+Typical Usage:
+    >>> from src.lookup_table import LOOKUP_TABLE
+    >>> print(LOOKUP_TABLE)
+    {....}
+"""
 
 LOOKUP_TABLE = {
     "l": "a",
@@ -23,5 +35,5 @@ LOOKUP_TABLE = {
     "q": "w",
     "w": "x",
     "x": "y",
-    "z": "z"
+    "z": "z",
 }

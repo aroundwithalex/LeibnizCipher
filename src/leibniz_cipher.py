@@ -20,6 +20,7 @@ Typical Usage:
 
 from src.lookup_table import LOOKUP_TABLE
 
+
 def scramble(text: str) -> str:
     """
     Scrambles text using the Leibniz Cipher.
@@ -34,10 +35,10 @@ def scramble(text: str) -> str:
 
     Args:
         Text -> Text to scramble
-    
+
     Returns:
         Scrambled text
-    
+
     Raises:
         None
     """
@@ -50,7 +51,7 @@ def scramble(text: str) -> str:
             continue
 
         scrambled_string += LOOKUP_TABLE[str(letter)]
-    
+
     return scrambled_string
 
 
@@ -64,10 +65,10 @@ def unscramble(text: str) -> str:
 
     Args:
         Text -> Text to unscramble
-    
+
     Returns:
         Unscrambled string
-    
+
     Raises:
         None
     """
@@ -81,8 +82,8 @@ def unscramble(text: str) -> str:
         if not letter.isalpha():
             unscrambled_string += letter
             continue
-        
-        key_letter  = lookup_keys[lookup_values.index(letter)]
+
+        key_letter = lookup_keys[lookup_values.index(letter)]
         unscrambled_string += key_letter
-    
+
     return unscrambled_string
